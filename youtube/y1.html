@@ -1,17 +1,95 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>youtube clone</title>
+<head>
+    <title>YouTube Header</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 
-        <style>
-            .thumbnail-1{
-                
+        }
+        .logo {
+            height: 100px;
+            margin-right: 20px;
+        }
+        .search-container {
+            display: flex;
+            flex-grow: 1;
+            max-width: 600px;
+        }
+        .search-bar {
+            flex-grow: 1;
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            border-radius: 20px 0 0 20px;
+            font-size: 16px;
+            outline: none;
+        }
+        .search-button {
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            border-left: none;
+            border-radius: 0 20px 20px 0;
+            background: #f8f8f8;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            background: #f0f0f0;
+        }
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+        .search{
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+        .profile-pic {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
 
-            }
+            <img src="https://www.youtube.com/yts/img/yt_1200-vfl4C3T0K.png" alt="YouTube Logo" class="logo">
+        </div>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search" class="search-bar">
+            <button class="search-button"> 
+                <img src="https://www.svgrepo.com/show/7109/search.svg" alt=" search" class=" search">
+            </button>
+            <button style="display: block; border-radius: 200px; margin-left: 13px; ">
+                    Voice 
+            </button>
+        </div>
+        
+        <div class="right-section">
 
-        </style>
-        <body>
-            <img class="thumbnail-1" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp">
-
-        </body>
-    </head>
+            <img src="https://cdn-icons-png.flaticon.com/512/565/565422.png" alt="Notifications" class="icon">
+            <img src=" " alt="Profile" class="profile-pic">
+        </div>
+    </header>
+</body>
 </html>
